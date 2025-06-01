@@ -1,6 +1,6 @@
 //PROGRAMA PARA MOVIMNTO DE TORRE 5 CASAS PARA FRENTE
 #include <stdio.h>
-#include <windows.h> // para a função Sleep
+
 
 int main()
 {
@@ -24,7 +24,7 @@ int main()
     for (movimentoY=1;movimentoY<=5;movimentoY++)
     {
         printf("A TORRE está na casa A%d.\n",movimentoY);
-        Sleep(1000); // Pausa de 1 segundo
+        
     }
 
     //inicio movimento RAINHA com WHILE
@@ -34,7 +34,7 @@ int main()
     while (movimentoX >= 1) // enquanto a linha for maior ou igual a 1
     {
         printf("A RAINHA está na casa H%d.\n", movimentoX);
-        Sleep(1000); // Pausa de 1 segundo
+        
         movimentoX--; // decrementa a posição da RAINHA
     }
 
@@ -47,7 +47,7 @@ int main()
     {
         printf("O BISPO está na casa %c%d.\n", 'A' + movimentoX - 1, movimentoY); // converte a posição da coluna para letra
         // 'A' + movimentoX - 1 converte o número da coluna para a letra correspondente
-        Sleep(1000); // Pausa de 1 segundo
+        
         movimentoX++; // incrementa a posição do BISPO na coluna
         movimentoY++; // incrementa a posição do BISPO na linha
     } while (movimentoX <= 5 && movimentoY <= 5); // enquanto a coluna e linha forem menores ou iguais a 5
