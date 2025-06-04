@@ -51,4 +51,17 @@ int main()
         movimentoX++; // incrementa a posição do BISPO na coluna
         movimentoY++; // incrementa a posição do BISPO na linha
     } while (movimentoX <= 5 && movimentoY <= 5); // enquanto a coluna e linha forem menores ou iguais a 5
+
+    //INICIO DO MOVIMENTO DO CAVALO COM LOOPS ANINHADOS PARA O MOVIMENTO DO AVENTUREIRO
+    printf("O CAVALO irá se mover DUAS casas para baixo e UMA casa para a esquerda.\n");
+    printf("Inicia o movimento na casa B3 e terminará na A1.\n");
+    
+    for (movimentoX = 1; movimentoX >= 1; movimentoX--)
+    {
+        for (movimentoY = 3; movimentoY >= 1; movimentoY--) 
+        {
+            printf("O CAVALO está na casa B%d.\n", movimentoY);
+        }
+        printf("O CAVALO está na casa A%d.\n", movimentoX);
+    }
 }
